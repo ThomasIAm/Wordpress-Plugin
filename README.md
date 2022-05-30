@@ -20,7 +20,7 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 `sudo apt update`
 
     sudo apt install apache2 \
-    
+
                  ghostscript \
 
                  libapache2-mod-php \
@@ -94,13 +94,16 @@ Daarna moet de site 'aangezet' worden met het volgende commando:
 
 `sudo a2ensite wordpress`
 
+
 Toestaan van URL herschrijven:
 
 `sudo a2enmod rewrite`
 
+
 Zet de default "It Works" site uit:
 
 `sudo a2dissite 000-default`
+
 
 Start daarna de Apache service opnieuw op:
 
