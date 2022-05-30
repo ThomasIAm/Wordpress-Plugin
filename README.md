@@ -179,6 +179,7 @@ Volg hier het installatie proces.
 Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
 <br>
 <br>
+<br>
 Je Wordpress website is klaar om te gebruiken!
 
 Ga nu door naar de stappen om phpmyadmin te configureren.
