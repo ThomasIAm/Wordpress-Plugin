@@ -136,5 +136,50 @@ Daarna start je de mysql service:
 `sudo service mysql start`
 ## Wordpress met database ##
 
+In deze stap gaan we Wordpress met de database koppelen.
+
+Allereerst kopieer het 'sample' bestand naar `wp-config-php`.
+
+Dit doen we door het volgende commando te gebruiken:
+
+`sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php`
+
+In de volgende stap worden de credentials aangemaakt. <bold>Let op</bold> verander de volgende gedeeltes niet in het commando `database_name_here` en `username_here`.
+
+Je vervangt wel `your password` met je database wachtwoord!
+
+    sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
+    sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
+    sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp-config.php
+
+Open daarna de configuration file in nano (of welke tekst-editor je gebruikt):
+
+`sudo -u www-data nano /srv/www/wordpress/wp-config.php`
+
+Zoek naar de volgende tekst:
+
+    define( 'AUTH_KEY',         'put your unique phrase here' );
+    define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+    define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+    define( 'NONCE_KEY',        'put your unique phrase here' );
+    define( 'AUTH_SALT',        'put your unique phrase here' );
+    define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+    define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+    define( 'NONCE_SALT',       'put your unique phrase here' );
+
+Verwijder deze tekst.
+
+En vervang het met:
+
+    define('AUTH_KEY',         'H@6-|$v-I]pkBDUTrP)zN7;.t]n%,!@OLrt0jLx/u >|a<#NuwPM02FT  UF3]-E');
+    define('SECURE_AUTH_KEY',  'F1*I_O;KYuQ[N|R_Xy*h^0>s3%ddO6u%-;p[+-p2j(}?sE8iB&gw8UNpYqLI0cpy');
+    define('LOGGED_IN_KEY',    '~_-l$g)|#&zlEu+;^7G0-.K)wu/p0%4=Nb;WJ4H`<YVdF{LSO^#t$H&#eB=|st#&');
+    define('NONCE_KEY',        ']X?Mk6+743-@:n{rl%RJqp|^S1r2*>|2fo?=D5a=F+wR^k>Tf|vyZ `8a>&u-O!(');
+    define('AUTH_SALT',        '/c=g1idW6 ]L>hO,B4nL]QLfyVt+O,V.FY,-iFzkp</h4I9!Yx&c!>RYH^5uIV2v');
+    define('SECURE_AUTH_SALT', 'lD4i?nW@o`!e@OP3vn^5VVyOI5c%fa`t-bEJ;T-F+j#:nV&(mV9J|n5XjdK>h0a~');
+    define('LOGGED_IN_SALT',   'r{J#m]/_zN2],Wy+{^HnA9R|1pC8dM9JF{>>a F~Tttgr;*(,yE&T9;oK`@i?f^3');
+    define('NONCE_SALT',       'S{-L5WN/^cW9VT1VEkZah$885$%T>N)v~q=)3LebN1B,rlK<u]6Lq9.`w9$l60jh');
+
+Sla het bestand op.
 ## Wordpress configuratie ##
 
