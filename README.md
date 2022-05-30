@@ -110,6 +110,30 @@ Start daarna de Apache service opnieuw op:
 `sudo service apache2 reload`
 ## Database ##
 
+We maken een MySQL database met de volgende commando's:
+
+Stap 1
+
+`sudo mysql -u root`
+
+Stap 2 (dit zijn de commando's in mysql)
+
+`CREATE DATABASE wordpress;`
+
+`CREATE USER wordpress@localhost IDENTIFIED BY 'voeg hier je wachtwoord in';`
+
+    GRANT SELECT, INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+        -> ON wordpress.*
+        -> TO wordpress@localhost;
+
+`FLUSH PRIVILEGES;`
+
+`quit`
+
+
+Daarna start je de mysql service:
+
+`sudo service mysql start`
 ## Wordpress met database ##
 
 ## Wordpress configuratie ##
