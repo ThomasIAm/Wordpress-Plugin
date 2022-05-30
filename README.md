@@ -20,7 +20,6 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 `sudo apt update`
 
     sudo apt install apache2 \
-
                  ghostscript \
                  libapache2-mod-php \
                  mysql-server \
@@ -174,9 +173,9 @@ Sla het bestand op.
 ## Wordpress configuratie ##
 
 Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
-
+<br>
 Volg hier het installatie proces. 
-
+<br>
 Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
 
 Je Wordpress website is klaar om te gebruiken!
