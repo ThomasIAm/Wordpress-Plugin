@@ -41,3 +41,11 @@ sudo apt install apache2 \
 sudo chown www-data: /srv/www
 curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www`
 
+## Apache ##
+
+## Database ##
+
+## Wordpress met database ##
+
+## Wordpress configuratie ##
+
