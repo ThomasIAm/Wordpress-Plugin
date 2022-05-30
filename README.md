@@ -173,11 +173,12 @@ Sla het bestand op.
 ## Wordpress configuratie ##
 
 Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
-<br>
-Volg hier het installatie proces. 
-<br>
-Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
 
+Volg hier het installatie proces. 
+
+Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
+<br>
+<br>
 Je Wordpress website is klaar om te gebruiken!
 
 Ga nu door naar de stappen om phpmyadmin te configureren.
