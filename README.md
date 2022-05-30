@@ -17,8 +17,8 @@ Deze README gaat niet in hoe Ubuntu te installeren. Het is raadzaam om de OS te 
 
 Om Apache en PHP te installeren gebruiken we de volgende commando's in de terminal:
 
-`sudo apt update`
-`sudo apt install apache2 \`
+`sudo apt update`\n
+`sudo apt install apache2 \`\n
                  `ghostscript \`
                  `libapache2-mod-php \`
                  `mysql-server \`
@@ -43,7 +43,7 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 
 ## Apache ##
 
-Maak een Apache site aanm. Maak een folder in 
+Maak een Apache site aan. Maak een folder in 
 `/etc/apache2/sites-available/wordpress.conf`
 
 Zet daarin de volgende code:
