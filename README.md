@@ -19,7 +19,8 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 
 `sudo apt update`
 
-`sudo apt install apache2 \`
+    sudo apt install apache2 \
+    
                  ghostscript \
 
                  libapache2-mod-php \
