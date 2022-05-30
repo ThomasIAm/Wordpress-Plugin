@@ -47,7 +47,7 @@ Maak een Apache site aanm. Maak een folder in
 `/etc/apache2/sites-available/wordpress.conf`
 
 Zet daarin de volgende code:
-`<VirtualHost *:80>
+<VirtualHost *:80>
     DocumentRoot /srv/www/wordpress
     <Directory /srv/www/wordpress>
         Options FollowSymLinks
@@ -59,7 +59,7 @@ Zet daarin de volgende code:
         Options FollowSymLinks
         Require all granted
     </Directory>
-</VirtualHost>`
+</VirtualHost>
 
 Daarna moet de site 'aangezet' worden met het volgende commando:
 `sudo a2ensite wordpress`
