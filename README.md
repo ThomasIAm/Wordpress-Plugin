@@ -17,8 +17,8 @@ Deze README gaat niet in hoe Ubuntu te installeren. Het is raadzaam om de OS te 
 
 Om Apache en PHP te installeren gebruiken we de volgende commando's in de terminal:
 
-`sudo apt update`\n
-`sudo apt install apache2 \`\n
+`sudo apt update`
+`sudo apt install apache2 \`
                  `ghostscript \`
                  `libapache2-mod-php \`
                  `mysql-server \`
