@@ -22,29 +22,17 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
     sudo apt install apache2 \
 
                  ghostscript \
-
                  libapache2-mod-php \
-
                  mysql-server \
-
                  php \
-
                  php-bcmath \
-
                  php-curl \
-
                  php-imagick \
-
                  php-intl \
-
                  php-json \
-
                  php-mbstring \
-
                  php-mysql \
-
                  php-xml \
-
                  php-zip
 
  ## installeer Wordpress ##
@@ -169,7 +157,7 @@ Zoek naar de volgende tekst:
 
 Verwijder deze tekst.
 
-En vervang het met:
+En vervang het met onderstaande tekst:
 
     define('AUTH_KEY',         'H@6-|$v-I]pkBDUTrP)zN7;.t]n%,!@OLrt0jLx/u >|a<#NuwPM02FT  UF3]-E');
     define('SECURE_AUTH_KEY',  'F1*I_O;KYuQ[N|R_Xy*h^0>s3%ddO6u%-;p[+-p2j(}?sE8iB&gw8UNpYqLI0cpy');
@@ -180,6 +168,17 @@ En vervang het met:
     define('LOGGED_IN_SALT',   'r{J#m]/_zN2],Wy+{^HnA9R|1pC8dM9JF{>>a F~Tttgr;*(,yE&T9;oK`@i?f^3');
     define('NONCE_SALT',       'S{-L5WN/^cW9VT1VEkZah$885$%T>N)v~q=)3LebN1B,rlK<u]6Lq9.`w9$l60jh');
 
+Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a> naar bovenstaande tekst.
+
 Sla het bestand op.
 ## Wordpress configuratie ##
 
+Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
+
+Volg hier het installatie proces. 
+
+Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
+
+Je Wordpress website is klaar om te gebruiken!
+
+Ga nu door naar de stappen om phpmyadmin te configureren.
