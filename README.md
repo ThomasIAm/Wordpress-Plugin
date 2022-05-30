@@ -20,32 +20,31 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 `sudo apt update`
 
 `sudo apt install apache2 \`
+                 ghostscript \
 
-                 `ghostscript \`
+                 libapache2-mod-php \
 
-                 `libapache2-mod-php \`
+                 mysql-server \
 
-                 `mysql-server \`
+                 php \
 
-                 `php \`
+                 php-bcmath \
 
-                 `php-bcmath \`
+                 php-curl \
 
-                 `php-curl \`
+                 php-imagick \
 
-                 `php-imagick \`
+                 php-intl \
 
-                 `php-intl \`
+                 php-json \
 
-                 `php-json \`
+                 php-mbstring \
 
-                 `php-mbstring \`
+                 php-mysql \
 
-                 `php-mysql \`
+                 php-xml \
 
-                 `php-xml \`
-
-                 `php-zip`
+                 php-zip
 
  ## installeer Wordpress ##
 
@@ -64,31 +63,31 @@ Maak een Apache site aan. Maak een folder in
 
 Zet daarin de volgende code:
 
-<VirtualHost *:80>
+    <VirtualHost *:80>
 
-    DocumentRoot /srv/www/wordpress
+        DocumentRoot /srv/www/wordpress
 
-    <Directory /srv/www/wordpress>
+        <Directory /srv/www/wordpress>
 
-        Options FollowSymLinks
+            Options FollowSymLinks
 
-        AllowOverride Limit Options FileInfo
+            AllowOverride Limit Options FileInfo
 
-        DirectoryIndex index.php
+            DirectoryIndex index.php
 
-        Require all granted
+            Require all granted
 
-    </Directory>
+        </Directory>
 
-    <Directory /srv/www/wordpress/wp-content>
+        <Directory /srv/www/wordpress/wp-content>
 
-        Options FollowSymLinks
+            Options FollowSymLinks
 
-        Require all granted
+            Require all granted
 
-    </Directory>
-    
-</VirtualHost>
+        </Directory>
+
+    </VirtualHost>
 
 Daarna moet de site 'aangezet' worden met het volgende commando:
 
