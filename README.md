@@ -62,15 +62,19 @@ Zet daarin de volgende code:
 </VirtualHost>
 
 Daarna moet de site 'aangezet' worden met het volgende commando:
+
 `sudo a2ensite wordpress`
 
 Toestaan van URL herschrijven:
+
 `sudo a2enmod rewrite`
 
 Zet de default "It Works" site uit:
+
 `sudo a2dissite 000-default`
 
 Start daarna de Apache service opnieuw op:
+
 `sudo service apache2 reload`
 ## Database ##
 
