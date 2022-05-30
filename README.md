@@ -182,4 +182,4 @@ Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localh
 <br>
 Je Wordpress website is klaar om te gebruiken!
 
-Ga nu door naar de stappen om phpmyadmin te configureren.
+Ga nu verder om phpmyadmin te configureren.
