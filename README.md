@@ -38,15 +38,18 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
  Om Wordpress te installeren gebruiken we de volgende commando's:
 
 `sudo mkdir -p /srv/www`
+
 `sudo chown www-data: /srv/www`
+
 `curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www`
 
 ## Apache ##
 
 Maak een Apache site aan. Maak een folder in 
-`/etc/apache2/sites-available/wordpress.conf`
+`/etc/apache2/sites-available/wordpress.conf`.
 
 Zet daarin de volgende code:
+
 <VirtualHost *:80>
     DocumentRoot /srv/www/wordpress
     <Directory /srv/www/wordpress>
