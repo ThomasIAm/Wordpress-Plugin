@@ -156,18 +156,9 @@ Zoek naar de volgende tekst:
 
 Verwijder deze tekst.
 
-En vervang het met onderstaande tekst:
+En vervang met de tekst van onderstaande link
 
-    define('AUTH_KEY',         'H@6-|$v-I]pkBDUTrP)zN7;.t]n%,!@OLrt0jLx/u >|a<#NuwPM02FT  UF3]-E');
-    define('SECURE_AUTH_KEY',  'F1*I_O;KYuQ[N|R_Xy*h^0>s3%ddO6u%-;p[+-p2j(}?sE8iB&gw8UNpYqLI0cpy');
-    define('LOGGED_IN_KEY',    '~_-l$g)|#&zlEu+;^7G0-.K)wu/p0%4=Nb;WJ4H`<YVdF{LSO^#t$H&#eB=|st#&');
-    define('NONCE_KEY',        ']X?Mk6+743-@:n{rl%RJqp|^S1r2*>|2fo?=D5a=F+wR^k>Tf|vyZ `8a>&u-O!(');
-    define('AUTH_SALT',        '/c=g1idW6 ]L>hO,B4nL]QLfyVt+O,V.FY,-iFzkp</h4I9!Yx&c!>RYH^5uIV2v');
-    define('SECURE_AUTH_SALT', 'lD4i?nW@o`!e@OP3vn^5VVyOI5c%fa`t-bEJ;T-F+j#:nV&(mV9J|n5XjdK>h0a~');
-    define('LOGGED_IN_SALT',   'r{J#m]/_zN2],Wy+{^HnA9R|1pC8dM9JF{>>a F~Tttgr;*(,yE&T9;oK`@i?f^3');
-    define('NONCE_SALT',       'S{-L5WN/^cW9VT1VEkZah$885$%T>N)v~q=)3LebN1B,rlK<u]6Lq9.`w9$l60jh');
-
-Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a> naar bovenstaande tekst.
+Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a>.
 
 Sla het bestand op.
 ## Wordpress configuratie ##
@@ -183,79 +174,3 @@ Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localh
 Je Wordpress website is klaar om te gebruiken!
 
 Ga nu verder om phpmyadmin te configureren.
-
-# Installatie phpMyAdmin
-
-phpMyAdmin is een hulpmiddel om de database van WordPress te beheren. Nadat WordPress is geinstalleerd kan phpMyAdmin worden geinstalleerd; voer hiervoor het volgende kommando uit:
-
-    sudo apt install phpmyadmin
-
-En afhankelijk van de onderliggende webserver technologie de volgende kommando's:
-
-Voor een Apache server:
-
-    sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
-    sudo a2enconf phpmyadmin.conf
-    sudo service apache2 reload
-
-Voor een Nginx server:
-
-    sudo ln -s /user/share/phpmyadmin /var/www/public_html/phpmyadmin
-    nginx -s reload
-
-phpMyAdmin draait als web applicatie en wordt gestart in een browser met de volgende URL:
-
-    localhost/phpmyadmin/
-
-Er kan nu worden ingelogd met de gebruiker en wachtwoord zoals opgegeven tijdens de installatie van WordPress. Hierna kan de database behorend bij WordPress worden bekeken en beheerd.
-
-# Installatie www.bad-neighborhood.com Website Simulator
-
-De ontwikkelaar van de Login LockDown plugin heeft een eigen website www.bad-neighborhood.com en om daar geen gebruik van te hoeven maken wordt er gebruik gemaakt van een simulatie die lokaal op de machine draait.
-
-Voer de volgende stappen uit om deze lokaal te installeren.
-
-Maak een subfolder in de Applications subfolder:
-
-    ~$ cd ~/Applications
-    ~/Applications$ mkdir www.bad-neighborhood.com
-
-Pak de zip file uit in de net aangemaakte subfolder. Hierna staan in deze folder in ieder geval twee bestanden:
-
-    index.html
-    server.py
-
-Start de simulator met:
-
-    ./server.py
-
-Indien succesvol gestart verschijnt de logging:
-
-    INFO:root:Starting httpd...
-
-De website simulator draait op poort 10000 en dus kan de home page van de website worden bezocht in een browser met de volgende URL:
-
-    localhost:10000
-
-# Installatie Laatste Versie van de Login LockDown plugin
-
-In een van de stappen hiervoor is versie 1.8.1 van de Login LockDown plugin geinstalleerd. Op de website simulator is een nieuwste versie 1.8.2 beschikbaar die geinstalleerd moet worden. Ergens op de pagina staat een link:
-
-    Download: Login LockDown v1.8.2
-
-Klik op deze link en hierna wordt de zip file login-lockdown.1.8.2.zip gedownload en geplaatst in de Downloads folder.
-
-Volg nu dezelfde instructies waarmee versie 1.8.1 werd geinstalleerd, echter nu wordt deze overschreven door deze laatste versie 1.8.2.
-
-1. Kontroleer op de WordPress admin pagina of nu inderdaad versie 1.8.2 actief is.
-2. Probeer nu weer eens in te loggen met een onjuist wachtwoord.
-3. Log nu weer in met het juiste wachtwoord.
-4. Kontroleer in phpMyAdmin of er inderdaad weer een logging wordt vermeld van het gebruik van een verkeerd wachtwoord.
-
-Ga nu terug naar de www.bad-neighborhood.com website simulator in de browser.
-
-Onderaan de pagina staat:
-
-    Read our disclaimer & secrets
-
-Klik op de secrets link en wees verbaasd over wat er nu getoond wordt op het scherm!
