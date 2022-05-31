@@ -43,7 +43,7 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
                  php-xml \
                  php-zip
 
- ## installeer Wordpress ##
+## installeer Wordpress ##
 
  Om Wordpress te installeren gebruiken we de volgende commando's:
 
