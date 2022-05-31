@@ -1,0 +1,802 @@
+<HTML><HEAD><title>Bad Neighborhood - Login LockDown WordPress Security Plugin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Enhanced WordPress Login Security Plugin.">
+<meta name="keywords" content="Bad Neighborhood, link check, seo, search engine optimization, WordPress Plugin">
+<meta name="robots" content="all">
+<meta name="distribution" content="Global"> 
+<meta name="revisit-after" content="1 DAY">
+<style>
+/*stylesheet for bad-neighborhood.com*/
+body, html {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	display: inline;
+	text-align: center;
+}
+
+body {
+	background: url(http://www.bad-neighborhood.com/images/bn-bg.jpg) fixed;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: 565656;
+}
+
+h1 {
+	margin-top: 0px;
+	font-size: 18px;
+}
+
+body a {
+	text-decoration: none;
+	color: #A8A28B;
+}
+
+body a:hover {
+	text-decoration: underline;
+	color: #88BCBF;
+}
+
+
+.outerwrap {
+	margin-left: auto; 
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding: 0px;
+	width: 1006px;
+	* height: 760px;
+	min-height: 760px;
+}	
+
+.header {
+	margin-left: auto; 
+	margin-right: auto;
+	margin-bottom: 0px; 
+	width: 590px;
+	height: 90px;
+	text-align: center;
+	background: url(http://www.bad-neighborhood.com/images/bn-logo-smaller.jpg) no-repeat;
+}
+
+.headerbg {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px;
+	height: 100px;
+	background: url(http://www.bad-neighborhood.com/images/header-bg.jpg) repeat-x;
+}
+
+.bodymain {
+	margin-left: 5px; 
+	margin-right: 5px;
+	margin-top: 0px; 
+	padding: 0px;
+	width: 570px;
+	* height: 300px;
+	min-height: 300px;
+	float: left;
+}
+
+.bodymaintop {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-top: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	height: 30px;
+}
+
+.bodymainbottom {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-bottom: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	height: 30px;
+}
+
+.bodymainmiddle {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	* height: 240px;
+	min-height: 240px;
+}
+
+.bodymainmiddle p {
+	margin: 0px 8px 0px 0px;
+	padding: 8px;
+	text-indent: 18px;
+	text-align: left;
+}
+
+.announcement {
+	color: #FF0033;
+}
+
+/*left sidebar (nav)*/
+
+.sideleft {
+	margin-left: auto; 
+	margin-right: 3px;
+	margin-top: 0px; 
+	padding: 0px;
+	width: 190px;
+	* height: 80px;
+	min-height: 80px;
+	float: left;
+}
+
+.sidelefttop {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-top: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 190px;
+	height: 30px;
+}
+
+.sideleftbottom {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-bottom: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 190px;
+	height: 30px;
+	margin-bottom: 6px;
+}
+
+.sideleftmiddle {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 190px;
+	* height: 25px;
+	min-height: 25px;
+}
+
+.sideleftmiddle ul {
+	margin: 0px 4px 0px 16px;
+	padding: 4px;
+	font-family: "Palatino Linotype", "Book Antiqua", Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: left;
+	text-indent: -12px;
+}
+
+.sideleftmiddle a {
+	text-decoration: none;
+	color: #A09EB6;
+}
+
+.sideleftmiddle ul a:hover {
+	text-decoration: underline;
+	color: #809EA6;
+}
+
+.sideleftmiddle ul span.new{
+	font-family: "Palatino Linotype", "Book Antiqua", Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #A09EB6;
+	background-color: #BBBB00;
+}
+
+/*end left sidebar*/
+
+/*right sidebar (ads/sponsors)*/
+
+.sideright {
+	margin-left: 3px; 
+	margin-right: auto;
+	margin-top: 0px; 
+	padding: 0px 0px 0px 0px;
+	width: 230px;
+	* height: 300px;
+	min-height: 300px;
+	float: right;
+}
+
+.siderighttopoffset {
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+}
+
+.siderighttop {
+	margin: 0px 20px 0px 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-top: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 210px;
+	height: 30px;
+}
+
+.siderightbottom {
+	margin: 0px 20px 6px 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-bottom: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 210px;
+	height: 30px;
+}
+
+.siderightmiddle {
+	margin: 0px 20px 0px 0px;
+	padding: 0px;
+	* padding-left: 5px;
+	background-color: #F9F8F8;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 210px;
+	* height: 240px;
+	min-height: 240px;
+}
+
+.siderightmiddle ul {
+	margin: 0px 4px 0px 16px;
+	padding: 4px;
+	font-family: "Palatino Linotype", "Book Antiqua", Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: left;
+	text-indent: -8px;
+}
+
+.siderightmiddle li {
+	margin-bottom: 6px;
+}
+
+/*end right sidebar*/
+
+/*footer*/
+
+.footer {
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 10px; 
+	margin-bottom: 0px; 
+	padding: 0px;
+	width: 570px;
+	* height: 90px;
+	min-height: 90px;
+}
+
+.footertop {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-top: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	height: 30px;
+}
+
+.footerbottom {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-bottom: 1px solid #508060;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	height: 30px;
+}
+
+.footermiddle {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F9F8F8;
+	border-left: 1px solid #508060;
+	border-right: 1px solid #508060;
+	width: 570px;
+	* height: 60px;
+	min-height: 60px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: 666666;
+}
+
+.footermiddle p {
+	margin: 0px 0px 0px 0px;
+	padding: 4px;
+}
+
+.footermiddle h2 {	
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+}
+
+/*end footer*/
+
+/*div to make the links work in IE*/
+
+.forlinks {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	color: 666666;
+}
+
+/*end div for links to work*/
+
+#headersout {
+	border-top:2px solid #747474;
+	border-bottom:2px solid #747474;
+	border-left:2px solid #747474;
+	border-right:2px solid #747474;
+	background-color: #60EEEE;
+	padding-top:5px;
+	padding: 8px;
+	text-align:left;
+	width: 520px;
+	margin:0 auto;
+	clear:both;
+	word-wrap: breakword;
+}
+
+.bnbutton {
+	background-color: #807C93;
+	color: #D2D0DB;
+	border: 1px outset #434252;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	height: 22px;
+}
+
+#tool {
+	margin-bottom: 0px;
+}
+
+#reset-switch {
+	display: none;
+	text-align: left;
+	text-indent: 0px;
+	float: left;
+}
+
+.helpmenus {
+	width: 350px;
+	height: 151px;
+	position: absolute;
+	left: -500px;
+	top: 0px;
+	padding: 0px;
+}
+
+.innerhelp {
+	height: 122px;
+	* height: 150px;
+	padding: 14px;
+	font-family: georgia;
+	font-size: 12px;
+	margin: 0px;
+	background:url(/images/helpbg.gif) no-repeat center center;
+}
+
+#startingpoint {
+	display: none;
+}
+
+.somelink {
+	border: 1px inset black;
+	margin: 0px auto 2px auto;
+	padding: 2px;
+	width: 96%;
+	text-align: left;
+	background-color: #c4dBaD;
+}
+
+#resultsdiv {
+	border-top: 2px solid #747474;
+	border-bottom: 2px solid #747474;
+	border-left: 2px solid #747474;
+	border-right: 2px solid #747474;
+	background-color: #B4CB9D;
+	padding-top: 5px;
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+	clear: both;
+	display: none;
+	font-size: 12px;
+}
+
+.qdiv {
+	border-bottom: 1px solid #666666;
+	* height: 33px;
+	min-height: 33px;
+}
+
+.qdivresult {
+	float: right;
+	width: 33px;
+	margin-right: 8px;
+}
+
+#errbox {
+	color: #FF2020;
+	width: 65%;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#progressform {
+	color: #606060;
+	width: auto;
+	font-size: 10px;
+	text-align: left;
+	margin: 4px;
+}
+
+#fieldsetqueue {
+	border-color:#DDDDDD;
+	display:none;
+	margin: 4px;
+}
+
+.myinput {
+	border: 2px groove #a0a0a0;
+	padding: 2px;
+	height: 28px;
+}
+
+#progress {
+	width: 80%;
+	border: 1px solid black;
+	display: none;
+	margin: 4px auto;
+}
+
+#progress p {
+	text-align: left;
+	text-indent: -12px;
+	padding-left: 14px;
+}
+
+#progress span {
+	/*border: 1px solid black;*/
+}
+
+.friends {
+	height: 100%;
+}
+
+.sinfo {
+	color: #A8D28B;
+}
+
+.tipinfo {
+	font-size: 14px;
+	color: #3010E0;
+}
+
+body table#MBL_COMM {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hl {
+	color: #005a94;
+}
+
+.hl a {
+	color: #3b772d;
+	border-bottom: 1px dotted #3b772d;
+}
+
+.hl a:hover {
+	color: #3b772d;
+	border-bottom: none;
+}
+
+
+/*Google Multi DC check specific*/
+table.Design4 {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.Design4 th {
+	text-align: left;
+	font-weight: normal;
+	padding: 0.1em 0.5em;
+	border-bottom: 2px solid #FFFFFF;
+	background: #DBE2F1;
+}
+table.Design4 td {
+	text-align: left;
+	border-bottom: 2px solid #FFFFFF;
+	padding: 0.1em 0.5em;
+	background: #DBE2F1;
+	border-left: 1px solid #FFFFFF;
+	font-size: 10px;
+	font-family: Verdana;
+}
+
+table.Design4 thead th {
+	background: #687EAB;
+	color: #FFFFFF;
+	text-align: center;
+	border-left: 1px solid #FFFFFF;
+}
+table.Design4 th.Corner {
+	text-align: left;
+}
+table.Design4 th#col1 {
+	width: 40%;
+}
+table.Design4 th#col2 {
+	width: 55%;
+}
+table.Design4 th#col3 {
+	width: 5%;
+}
+table.Design4 td div.returl {
+	font-size: 10px;
+	font-family: Verdana;
+}
+table.Design4 td div.rank {
+	margin: auto;
+}
+/*End Google Multi DC check specific*/
+
+#ScratchBackWidget {
+	margin-left: 5px;
+	* margin-left: 0px;
+	margin-right: auto;
+}
+
+.memlevel {
+	color: #FF9494;
+}
+
+.license, license pre {
+	text-indent: 0px;
+	font-weight: 100;
+	text-align: left;
+}
+
+.lform, lform p {
+	text-indent: 0px;
+	margin-left: 6px;
+	text-align: left;
+}
+
+#explanation {
+	text-align: left;
+}
+
+#explanation ul {
+	margin-top: 1px;
+}
+
+#explanation ul li {
+	text-indent: 8px;
+	text-align: left;
+	font-weight: 100;
+}
+
+#pwdkey {
+	text-align: left;
+}
+
+#pwdkey li {
+	margin-bottom: 5px;
+}
+
+#genpassdiv {
+	margin: 4px;
+	background-color: #d2edff;
+	border: 1px solid #D5D3De;
+}</style>
+</head>
+<body>
+
+<div class="headerbg">
+<div class="header">
+</div>
+</div>
+
+<div class="outerwrap">
+
+<div class="sideleft">
+<div class="sidelefttop">
+</div>
+<div class="sideleftmiddle">
+<div class="forlinks">
+<ul>
+<li><a href="/" title="SEO Tools">SEO Tools Home</a></li>
+<li><a href="/text-link-tool.htm" title="Bad Neighborhood Checker">Bad Neighborhood Link Checker</a></li>
+<li><a href="/password-generator.htm" title="Memorable Password Generator">Mnemonic Strong Password Generator</a></li>
+<li><a href="/google-multidc-rank-check.htm" title="Google Multi DC Rank Check">Google Multi-DC Rank Check</a></li>
+<li><a href="/yahoo-rank-checker.htm" title="Y! Multi Keyword Rank Check">Yahoo Multi-Keyword Rank Checker</a></li>
+<li><a href="/header_detector.php" title="Header Detector">HTTP Header Detector</a></li>
+<li><a href="/emailhashing.php" title="Hide emails from bots">Email Obfuscator/Encrypter</a></li>
+<li><a href="/login-lockdown.html" title="Login LockDown Wordpress security plugin">Login LockDown - WordPress Security Plugin</a></li>
+<li><a href="/puzzcaptcha.htm" title="PuzzCAPTCHA Demo">PuzzCAPTCHA Demo</a></li>
+<li><a href="/htmlhashing.htm" title="Full Text/HTML Obfuscator">Full Text/HTML Encrypter</a></li>
+<li><a href="/creative-commons-image-search.htm" title="Creative Commons Google Image Search Assistant">Creative Commons Google Image Search Assistant</a></li>
+<li><a href="/free-image-meta-search.htm" title="Free Image Meta Search">Free Image Meta Search</a></li>
+<li><a href="/my-social-profiles.htm" title="Social Profile Sidebar Link Generator">My Social Profiles</a></li>
+<li><a href="/suggest.php" title="Keyword Suggestion Tool based on AOL leaked data">Keyword Suggestions (AOL leaked data)</a></li>
+<li><a href="http://bad-neighborhood.blogsblogsblogs.com/" title="News, Tips, Tricks, and Helpful Ideas">Bad Neighborhood Blog</a></li>
+<li><a href="http://smackdown.blogsblogsblogs.com/" title="My personal blog">Smackdown! Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="sideleftbottom">
+</div>
+
+</div>
+
+<div class="bodymain">
+<div class="bodymaintop">
+</div>
+<div class="bodymainmiddle">
+<div class="forlinks">
+<h1>Login LockDown - A WordPress Enhanced Login Security Plugin</h1>
+<p>Login LockDown records the IP address and timestamp of every failed WordPress login attempt. If more than a 
+certain number of attempts are detected within a short period of time from the same
+IP range, then the login function is disabled for all requests from that range.
+This helps to prevent brute force password discovery. Currently the plugin defaults
+to a 1 hour lock out of an IP block after 3 failed login attempts within 5 minutes. This can be modified
+via the Options panel. Admisitrators can release locked out IP ranges manually from the panel.</p>
+
+<p><strong class="announcement">Version 1.6.1 released 2014-03-08 - </strong><br /><br />
+- fixed html glitch preventing options from being saved<br />
+</p>
+
+<p><strong class="announcement">Version 1.6 released 2014-03-07 - </strong><br /><br />
+- Cleaned up deprecated functions<br />
+- Fixed bug with invalid property on a non-object when locking out invalid usernames<br />
+- Fixed utilization of $wpdb->prepare<br />
+- Added more descriptive help text to each of the options<br />
+- Added the ability to remove the "Login form protected by Login LockDown." message from within the dashboard<br />
+</p>
+
+<p>Installation instructions:<br /><br />
+1. Extract login-lockdown.1.6.1.zip into your plugins directory into its own folder.<br />
+2. Activate the plugin in the Plugin options.<br />
+3. Customize the settings from the Options panel, if desired.<br /><br />
+Requires at least WordPress 3.6, tested up to 3.81</p>
+<p>Download: <a href="/login-lockdown.1.8.2.zip">Login LockDown v1.8.2</a></p>
+</div>
+</div>
+<div class="bodymainbottom">
+</div>
+
+<div class="footer">
+<div class="footertop">
+</div>
+<div class="footermiddle">
+<div class="forlinks">
+<div>Questions? Comments? Suggestions? Please feel free to <span id="phlinkob352018"></span>
+<script type="text/javascript" language="Javascript">
+var erp = new Array;
+erp[0] = 1835623272;
+erp[1] = 1634036800;
+erp[2] = 1701733484;
+erp[3] = 1702065008;
+erp[4] = 1868919922;
+erp[5] = 2033083247;
+erp[6] = 1832795710;
+erp[7] = 1010580549;
+erp[8] = 1835100524;
+erp[9] = 0;
+var em = '';
+var tmp;
+for(i=0;i<erp.length;i++){
+	tmp = erp[i];
+	if(Math.floor((tmp/Math.pow(256,3)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,3))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,3))) * Math.pow(256,3));
+	if(Math.floor((tmp/Math.pow(256,2)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,2))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,2))) * Math.pow(256,2));
+	if(Math.floor((tmp/Math.pow(256,1)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,1))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,1))) * Math.pow(256,1));
+	if(Math.floor((tmp/Math.pow(256,0)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,0))));
+	};
+};
+var tmp = new Array;
+tmp = em.split('>>><<<');
+em = tmp[0];
+var an = tmp[1];
+var nl = document.createElement('a');
+nl.setAttribute('id', 'linkob352018');
+nl.setAttribute('href', 'mailto:' + em);
+document.getElementById('phlinkob352018').appendChild(nl);
+document.getElementById('linkob352018').innerHTML = an;
+</script>
+<noscript>We're sorry, but Javascript must be enabled in order to access our email.</noscript>
+ &nbsp;me.</div>
+<br />
+<p><h2>Bad Neighborhood SEO Tools</h2></p>
+<p>www.bad-neighborhood.com</p>
+<p>&copy;Copyright 2005 - 2022 Michael VanDeMar All Rights Reserved</p>
+<p>Read our <a href="/disclaimer.htm">disclaimer</a> & <a href="/log">secrets</a></p>
+<p><!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-67PYmfPSmcm4o";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-67PYmfPSmcm4o" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-67PYmfPSmcm4o.gif" style="display: none" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<!-- End Quantcast tag --></p>
+</div>
+</div>
+<div class="footerbottom">
+</div>
+</div>
+
+</div>
+
+<div class="sideright">
+<div class="siderighttop">
+</div>
+<div class="siderightmiddle">
+<div class="forlinks">
+Recommended Products<br /> and Services:
+<ul>
+<li>&nbsp;</li>
+<li><div style="width: 125px; margin: 0px auto;"><a href="http://www.kqzyfj.com/click-3224425-10408485" target="_blank"><img src="http://www.lduhtrp.net/image-3224425-10408485" width="125" height="125" alt="" border="0"/></a></div></li>
+<li><div style="width: 125px; margin: 0px auto;"><a href="http://www.tkqlhce.com/click-3224425-10710149" target="_blank"><img src="http://www.lduhtrp.net/image-3224425-10710149" width="125" height="125" alt="Protect Your Computer Files" border="0"/></a></div></li>
+</ul>
+</div>
+</div>
+<div class="siderightbottom">
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3248853-17");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66417428); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66417428ns.gif" /></p></noscript>
+</body>
+</html>
+
