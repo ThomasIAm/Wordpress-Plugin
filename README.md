@@ -1,17 +1,26 @@
 # README #
 
-Dit is een README voor het installeren van Wordpress op een Ubuntu OS.
+In deze README worden de stappen uitgelegd om Wordpress op Ubuntu OS, phpmyadmin, de legitieme en de minder legitieme plugin te installeren.
 
 Deze README gaat niet in hoe Ubuntu te installeren. Het is raadzaam om de OS te installeren op een VM (Virtual Machine).
 
+Veel plezier met het lezen en uitvoeren van de stappen!
+
 ## Inhoudsopgave ##
 
-* installeer dependencies
-* installeer Wordpress
-* configureer Apache
-* configureer database
-* configureer Wordpress met database
-* configureer Wordpress
+* Installatie Wordpress
+    * installeer dependencies
+    * installeer Wordpress
+    * configureer Apache
+    * configureer database
+    * configureer Wordpress met database
+    * configureer Wordpress
+* Installatie Phpmyadmin
+* Installatie Login LockDown plugin
+* Installatie Website Simulator
+* Installatie Laatste Versie Login LockDown plugin
+
+# Installatie Wordpress #
 
 ## installeer dependencies ##
 
