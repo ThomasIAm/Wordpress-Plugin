@@ -154,12 +154,12 @@ Zoek naar de volgende tekst:
     define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
     define( 'NONCE_SALT',       'put your unique phrase here' );
 
-Verwijder deze tekst.
-
-En vervang met de tekst van onderstaande link
-
+Verwijder deze tekst en vervang met de tekst van onderstaande link
+<br>
+<br>
 Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a>.
-
+<br>
+<br>
 Sla het bestand op.
 ## Wordpress configuratie ##
 
