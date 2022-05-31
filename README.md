@@ -154,21 +154,12 @@ Zoek naar de volgende tekst:
     define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
     define( 'NONCE_SALT',       'put your unique phrase here' );
 
-Verwijder deze tekst.
-
-En vervang het met onderstaande tekst:
-
-    define('AUTH_KEY',         'H@6-|$v-I]pkBDUTrP)zN7;.t]n%,!@OLrt0jLx/u >|a<#NuwPM02FT  UF3]-E');
-    define('SECURE_AUTH_KEY',  'F1*I_O;KYuQ[N|R_Xy*h^0>s3%ddO6u%-;p[+-p2j(}?sE8iB&gw8UNpYqLI0cpy');
-    define('LOGGED_IN_KEY',    '~_-l$g)|#&zlEu+;^7G0-.K)wu/p0%4=Nb;WJ4H`<YVdF{LSO^#t$H&#eB=|st#&');
-    define('NONCE_KEY',        ']X?Mk6+743-@:n{rl%RJqp|^S1r2*>|2fo?=D5a=F+wR^k>Tf|vyZ `8a>&u-O!(');
-    define('AUTH_SALT',        '/c=g1idW6 ]L>hO,B4nL]QLfyVt+O,V.FY,-iFzkp</h4I9!Yx&c!>RYH^5uIV2v');
-    define('SECURE_AUTH_SALT', 'lD4i?nW@o`!e@OP3vn^5VVyOI5c%fa`t-bEJ;T-F+j#:nV&(mV9J|n5XjdK>h0a~');
-    define('LOGGED_IN_SALT',   'r{J#m]/_zN2],Wy+{^HnA9R|1pC8dM9JF{>>a F~Tttgr;*(,yE&T9;oK`@i?f^3');
-    define('NONCE_SALT',       'S{-L5WN/^cW9VT1VEkZah$885$%T>N)v~q=)3LebN1B,rlK<u]6Lq9.`w9$l60jh');
-
-Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a> naar bovenstaande tekst.
-
+Verwijder deze tekst en vervang met de tekst van onderstaande link
+<br>
+<br>
+Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a>.
+<br>
+<br>
 Sla het bestand op.
 ## Wordpress configuratie ##
 
@@ -263,3 +254,4 @@ Onderaan de pagina staat:
     Read our disclaimer & secrets
 
 Klik op de secrets link en wees verbaasd over wat er nu getoond wordt op het scherm!
+Ga nu verder om phpmyadmin te configureren.
