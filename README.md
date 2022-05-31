@@ -213,6 +213,15 @@ Er kan nu worden ingelogd met de gebruiker en wachtwoord zoals opgegeven tijdens
 
 Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verkeerde inlogpogingen vastlegd in de database. Daarnaast kan het zo worden ingericht dat inlogpogingen helemaal niet meer toegestaan voor een bepaalde tijd.
 
+* Ga naar de admin pagina van WordPress
+* Klik op de Plugins link aan de linkerzijde
+* Klik op de Add New knop aan de bovenzijde
+* Zoek naar de Login LockDown plugin aan de rechterzijde (plugin verschijnt nu bovenaan)
+* Klik op de Install Now knop
+* Klik op de Activate knop (Dde plugin staat nu bij de lijst van active plugins)
+* Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord
+* Kontroleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
+
 # Installatie www.bad-neighborhood.com Website Simulator
 
 De ontwikkelaar van de Login LockDown plugin heeft een eigen website www.bad-neighborhood.com en om daar geen gebruik van te hoeven maken wordt er gebruik gemaakt van een simulatie die lokaal op de machine draait.
@@ -263,4 +272,3 @@ Onderaan de pagina staat:
     Read our disclaimer & secrets
 
 Klik op de secrets link en wees verbaasd over wat er nu getoond wordt op het scherm!
-Ga nu verder om phpmyadmin te configureren.
