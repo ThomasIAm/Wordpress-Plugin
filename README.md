@@ -209,6 +209,10 @@ phpMyAdmin draait als web applicatie en wordt gestart in een browser met de volg
 
 Er kan nu worden ingelogd met de gebruiker en wachtwoord zoals opgegeven tijdens de installatie van WordPress. Hierna kan de database behorend bij WordPress worden bekeken en beheerd.
 
+# Installatie Login LockDown plugin
+
+Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verkeerde inlogpogingen vastlegd in de database. Daarnaast kan het zo worden ingericht dat inlogpogingen helemaal niet meer toegestaan voor een bepaalde tijd.
+
 # Installatie www.bad-neighborhood.com Website Simulator
 
 De ontwikkelaar van de Login LockDown plugin heeft een eigen website www.bad-neighborhood.com en om daar geen gebruik van te hoeven maken wordt er gebruik gemaakt van een simulatie die lokaal op de machine draait.
