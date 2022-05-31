@@ -218,7 +218,7 @@ Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verke
 * Klik op de Add New knop aan de bovenzijde
 * Zoek naar de Login LockDown plugin aan de rechterzijde (plugin verschijnt nu bovenaan)
 * Klik op de Install Now knop
-* Klik op de Activate knop (Dde plugin staat nu bij de lijst van active plugins)
+* Klik op de Activate knop (de plugin staat nu bij de lijst van active plugins)
 * Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord
 * Kontroleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
 
@@ -258,7 +258,18 @@ In een van de stappen hiervoor is versie 1.8.1 van de Login LockDown plugin gein
 
 Klik op deze link en hierna wordt de zip file login-lockdown.1.8.2.zip gedownload en geplaatst in de Downloads folder.
 
-Volg nu dezelfde instructies waarmee versie 1.8.1 werd geinstalleerd, echter nu wordt deze overschreven door deze laatste versie 1.8.2.
+De stappen voor installatie zijn iets anders dan de eerdere installatie van versie 1.8.1:
+
+* Ga naar de admin pagina van WordPress
+* Klik op de Plugins link aan de linkerzijde
+* Klik op de Add New knop aan de bovenzijde
+* Klik op de Upload Plugin knop aan de bovenzijde
+* Klik op de Browse... knop
+* Selecteer de login-lockdown.1.8.2.zip uit de Downloads folder
+* Klik op de Install Now knop
+* Klik op de Replace current with uploaded knop
+
+En vervolgens:
 
 1. Kontroleer op de WordPress admin pagina of nu inderdaad versie 1.8.2 actief is.
 2. Probeer nu weer eens in te loggen met een onjuist wachtwoord.
