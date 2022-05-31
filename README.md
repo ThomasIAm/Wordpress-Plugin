@@ -215,7 +215,7 @@ Maak een subfolder in de Applications subfolder:
     ~$ cd ~/Applications
     ~/Applications$ mkdir www.bad-neighborhood.com
 
-Pak de zip file uit in de net aangemaakte subfolder. Hierna staan in deze folder in ieder geval twee bestanden:
+Download de www.bad-neighborhood.com.zip file en pak de zip file uit in de net aangemaakte subfolder. Hierna staan in deze folder in ieder geval twee bestanden:
 
     index.html
     server.py
