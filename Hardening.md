@@ -42,3 +42,8 @@ Stel de aanvaller heeft de gebruikersnaam en wachtwoord, dan zal hij nog een (aa
 
 Het verbergen van je wp-login scherm is een handige tip zodat er niet de standaard admin login pagina wordt gebruikt. Je kan hiervoor bijvoorbeeld `WPS Hide Login` gebruiken. Hiermee kun je de url van je admin inlog pagina aanpassen. Zorg dat je deze url ergens veilig bewaard.
 
+## Security Plugins ##
+
+Ondanks ons voorbeeld van onze eigen plugin die gebaseerd is op de Login Lockdown plugin, is dit wel een goede plugin om te gebruiken. Je kunt namelijk na een aantal verkeerde inlog pogingen de toegang blokkeren voor een bepaalde tijd. Er zijn nog een aantal settings die je kunt wijzigen.
+
+Er zijn meerdere plugins die de security verhogen van je Wordpress, maar <bold>let dus wel op dat je niet zomaar iets download en installeerd!</bold> Gebruik de officiële kanalen dan is de kans het kleinst dat er iets mis gaat. Wees er op bedacht of de plugin veel wordt gebruikt of wordt geüpdate. <bold> Blijf dus altijd kritisch!</bold>
