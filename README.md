@@ -5,6 +5,12 @@ In deze README worden de stappen uitgelegd om Wordpress op Ubuntu OS, phpmyadmin
 Deze README gaat niet in hoe Ubuntu te installeren. Het is raadzaam om de OS te installeren op een VM (Virtual Machine).
 Zorg ervoor dat je voldoende ruimte hebt op je virtual machine of host zodat je alles kunt downloaden. Voor Wordpress heb je ongeveer 30 á 35 MB nodig.
 
+**Belangrijk**
+
+Clone eerst de repoistory naar een folder/directory op je computer, dit doe je met het volgende commando:
+
+`git clone https://bitbucket.org/saltcybersecurity/wordpress-plugin/src/master/`
+
 Veel plezier met het lezen en uitvoeren van de stappen!
 
 ## Inhoudsopgave ##
