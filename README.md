@@ -29,7 +29,7 @@ Veel plezier met het lezen en uitvoeren van de stappen!
 
 # Installatie Wordpress <a name="wordpress"></a>
 
-## installeer dependencies ##
+## installeer dependencies <a name="dependencies"></a>
 
 Om Apache en PHP te installeren gebruiken we de volgende commando's in de terminal:
 
@@ -54,7 +54,7 @@ Daarnaast is het van belang om het curl commando te installeren. Dat doe je met 
 
 `sudo apt install curl`
 
-## installeer Wordpress ##
+## installeer Wordpress <a name="installatie-wordpress"></a>
 
  Om Wordpress te installeren gebruiken we de volgende commando's:
 
@@ -64,7 +64,7 @@ Daarnaast is het van belang om het curl commando te installeren. Dat doe je met 
 
 `curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www`
 
-## Apache ##
+## Apache <a name="apache"></a>
 
 **Let op** deze stap is alleen als je al een Apache server op je computer hebt geconfigureerd!
 
@@ -134,7 +134,7 @@ Zet de default "It Works" site uit:
 Start daarna de Apache service opnieuw op:
 
 `sudo service apache2 reload`
-## Database ##
+## Database <a name="database"></a>
 
 **Let op** deze stap is alleen als je al een MySQL database op je computer hebt geconfigureerd!
 
@@ -169,7 +169,7 @@ Stap 2 (dit zijn de commando's in mysql)
 Daarna start je de mysql service:
 
 `sudo service mysql start`
-## Wordpress met database ##
+## Wordpress met database <a name="wpdata"></a>
 
 In deze stap gaan we Wordpress met de database koppelen.
 
@@ -209,7 +209,8 @@ Dit is de <a href="https://api.wordpress.org/secret-key/1.1/salt/">link</a>.
 <br>
 <br>
 Sla het bestand op.
-## Wordpress configuratie ##
+
+## Wordpress configuratie <a name="wordpress-configuratie"></a>
 
 Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
 
@@ -233,7 +234,7 @@ Je Wordpress website is klaar om te gebruiken!
 
 Ga nu verder om phpmyadmin te configureren.
 
-# Installatie phpMyAdmin
+# Installatie phpMyAdmin <a name="phpmyadmin"></a>
 
 phpMyAdmin is een hulpmiddel om de database van WordPress te beheren. Nadat WordPress is geinstalleerd kan phpMyAdmin worden geinstalleerd; voer hiervoor het volgende kommando uit:
 
@@ -258,7 +259,7 @@ phpMyAdmin draait als web applicatie en wordt gestart in een browser met de volg
 
 Er kan nu worden ingelogd met de gebruiker en wachtwoord zoals opgegeven tijdens de installatie van WordPress. Hierna kan de database behorend bij WordPress worden bekeken en beheerd.
 
-# Installatie Login LockDown plugin
+# Installatie Login LockDown plugin <a name="loginlockdown"></a>
 
 Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verkeerde inlogpogingen vastlegd in de database. Daarnaast kan het zo worden ingericht dat inlogpogingen helemaal niet meer toegestaan voor een bepaalde tijd.
 
@@ -271,7 +272,7 @@ Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verke
 * Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord (probeer dit maar één keer!)
 * Controleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
 
-# Installatie www.bad-neighborhood.com Website Simulator
+# Installatie www.bad-neighborhood.com Website Simulator <a name="simulator"></a>
 
 De ontwikkelaar van de Login LockDown plugin heeft een eigen website www.bad-neighborhood.com en om daar geen gebruik van te hoeven maken wordt er gebruik gemaakt van een simulatie die lokaal op de machine draait.
 
@@ -302,7 +303,7 @@ De website simulator draait op poort 10000 en dus kan de home page van de websit
 
     localhost:10000
 
-# Installatie Laatste Versie van de Login LockDown plugin
+# Installatie Laatste Versie van de Login LockDown plugin <a name="loginlockdown2"></a>
 
 In een van de stappen hiervoor is versie 1.8.1 van de Login LockDown plugin geinstalleerd. Op de website simulator is een nieuwste versie 1.8.2 beschikbaar die geinstalleerd moet worden. Ergens op de pagina staat een link:
 
