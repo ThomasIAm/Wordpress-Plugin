@@ -27,7 +27,7 @@ Wanneer er een nieuwe versie van een plugin (of theme) beschikbaar is, wordt er 
 
 Het bijwerken naar de laatste versie kan ook worden geautomatiseerd. Klik daarvoor de Enable auto-updates link bij geïnstalleerde plugins:
 
-![Plugin Auto Updates](images/PluginAutoUpdates.PNG)
+![Plugin Auto Updates](images/PluginAutoUpdates.png)
 
 Klik [hier](https://wordpress.org/support/article/plugins-themes-auto-updates/) voor meer informatie over automatische updates van plugins (en themes).
 
