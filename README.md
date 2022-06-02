@@ -3,6 +3,13 @@
 In deze README worden de stappen uitgelegd om Wordpress op Ubuntu OS, phpmyadmin, de legitieme en de minder legitieme plugin te installeren.
 
 Deze README gaat niet in hoe Ubuntu te installeren. Het is raadzaam om de OS te installeren op een VM (Virtual Machine).
+Zorg ervoor dat je voldoende ruimte hebt op je virtual machine of host zodat je alles kunt downloaden. Voor Wordpress heb je ongeveer 30 á 35 MB nodig.
+
+**Belangrijk**
+
+Clone eerst de repoistory naar een folder/directory op je computer, dit doe je met het volgende commando:
+
+`git clone https://bitbucket.org/saltcybersecurity/wordpress-plugin/src/master/`
 
 Veel plezier met het lezen en uitvoeren van de stappen!
 
@@ -43,6 +50,10 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
                  php-xml \
                  php-zip
 
+Daarnaast is het van belang om het curl commando te installeren. Dat doe je met het volgende commando:
+
+`sudo apt install curl`
+
 ## installeer Wordpress ##
 
  Om Wordpress te installeren gebruiken we de volgende commando's:
@@ -55,10 +66,27 @@ Om Apache en PHP te installeren gebruiken we de volgende commando's in de termin
 
 ## Apache ##
 
+**Let op** deze stap is alleen als je al een Apache server op je computer hebt geconfigureerd!
+
+Stap 0
+Het kan noodzakelijk zijn om de service te starten. Dit doe je door:
+
+`sudo service apache2 start`
+
+Daarna ga je door met de volgende stappen.
+
 Maak een Apache site aan. Maak een folder in 
 `/etc/apache2/sites-available/wordpress.conf`.
 
-Zet daarin de volgende code:
+Om een bestand aan te maken gebruiken we het commando 'touch'.
+Het commando daarvoor is als volgt:
+
+`touch /etc/apache2/sites-available/wordpress.conf`
+
+Nu is er een bestand aangemaakt genaamd 'wordpress.conf' in de directory */etc/apache2/sites-available* 
+Daarna moeten we het bestand aanpassen/invullen. Dit doe je door bijvoorbeeld een tekst-editor te gebruiken als nano of vim. In ons geval maken we gebruik van nano
+
+Zet in het *wordpress.conf* bestand de volgende code:
 
     <VirtualHost *:80>
 
@@ -86,6 +114,8 @@ Zet daarin de volgende code:
 
     </VirtualHost>
 
+Bij deze stap wordt er een webserver aangemaakt op poort 80.
+
 Daarna moet de site 'aangezet' worden met het volgende commando:
 
 `sudo a2ensite wordpress`
@@ -106,6 +136,17 @@ Start daarna de Apache service opnieuw op:
 `sudo service apache2 reload`
 ## Database ##
 
+**Let op** deze stap is alleen als je al een MySQL database op je computer hebt geconfigureerd!
+
+Stap 0
+Het kan noodzakelijk zijn om de MySQL service opnieuw te starten, dit doe je door:
+
+`sudo service mysql start`
+
+Ga daarna door met de volgende stappen.
+<br>
+<br>
+
 We maken een MySQL database met de volgende commando's:
 
 Stap 1
@@ -118,9 +159,7 @@ Stap 2 (dit zijn de commando's in mysql)
 
 `CREATE USER wordpress@localhost IDENTIFIED BY 'voeg hier je wachtwoord in';`
 
-    GRANT SELECT, INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
-        -> ON wordpress.*
-        -> TO wordpress@localhost;
+    GRANT SELECT, INSERT,UPDATE,DELETE,CREATE,DROP,ALTER ON wordpress.* TO wordpress@localhost;
 
 `FLUSH PRIVILEGES;`
 
@@ -140,7 +179,7 @@ Dit doen we door het volgende commando te gebruiken:
 
 `sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php`
 
-In de volgende stap worden de credentials aangemaakt. <bold>Let op</bold> verander de volgende gedeeltes niet in het commando `database_name_here` en `username_here`.
+In de volgende stap worden de credentials aangemaakt. **Let op** verander de volgende gedeeltes niet in het commando `database_name_here` en `username_here`.
 
 Je vervangt wel `your password` met je database wachtwoord!
 
@@ -175,6 +214,12 @@ Sla het bestand op.
 Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
 
 Volg hier het installatie proces. 
+
+Na het voltooien van het installatie proces kun je opnieuw naar <a href="http://localhost/">http://localhost/</a> gaan.
+
+Als het goed is zie je een pagina zoals onderstaande foto.
+
+![Wordpress default](images/localhost_wordpress.PNG)
 
 Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
 <br>
@@ -219,7 +264,7 @@ Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verke
 * Zoek naar de Login LockDown plugin aan de rechterzijde (plugin verschijnt nu bovenaan)
 * Klik op de Install Now knop
 * Klik op de Activate knop (de plugin staat nu bij de lijst van active plugins)
-* Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord
+* Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord (probeer dit maar één keer!)
 * Kontroleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
 
 # Installatie www.bad-neighborhood.com Website Simulator
