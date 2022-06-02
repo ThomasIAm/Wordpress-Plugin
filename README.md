@@ -27,7 +27,7 @@ Veel plezier met het lezen en uitvoeren van de stappen!
 - [Installatie Website Simulator](#simulator)
 - [Installatie Laatste Versie Login LockDown plugin](#loginlockdown2)
 
-# Installatie Wordpress <a name="wordpress"></a>#
+# Installatie Wordpress <a name="wordpress"></a>
 
 ## installeer dependencies ##
 
