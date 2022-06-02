@@ -17,16 +17,31 @@ In de bovenstaande handleiding wordt ook uitgebreid beschreven waar men op moet 
 * Download en gebruik alleen plugins van betrouwbare bronnen
 * Vervang verouderde plugins door nieuwere alternatieve plugins
 * Selecteer kritisch een plugin voordat talloze andere plugins worden geïnstalleerd
+* Valideer de bronkode op kwetsbaarheden
+
+# Automatische Updates
+
+Om een WordPress site veilig te houden, moeten plugins (en themes) altijd worden bijgewerkt naar de nieuwste versie.
+
+Wanneer er een nieuwe versie van een plugin (of theme) beschikbaar is, wordt er een waarschuwingsballon weergegeven in het WordPress beheerdersmenu en wordt de bijbehorende plugin gemarkeerd op het plugins scherm.
+
+Het bijwerken naar de laatste versie kan ook worden geautomatiseerd. Klik daarvoor de Enable auto-updates link bij geïnstalleerde plugins:
+
+![Plugin Auto Updates](images/PluginAutoUpdates.PNG)
+
+Klik [hier](https://wordpress.org/support/article/plugins-themes-auto-updates/) voor meer informatie over automatische updates van plugins (en themes).
+
+# Valideren Bronkode
 
 De bron van inbreuk op de security via plugins is de PHP bronkode. De bronkode van plugins met veel functionaliteit kan bestaan uit vele modules en vele duizenden regels kode. Buiten technische kennis die nodig is om bronkode te inspecteren is het ook een langdurig proces. Daarnaast zal altijd worden geprobeerd om kwetsbaarheden in kode niet op te laten vallen.
 
 Hieronder worden twee oplossingsrichtingen beschreven die kunnen worden gebruikt voor een automatische kontrole van bronkode; een die nog enige handmatig bediening nodig heeft en een die volledig kan worden geïntegreerd in het software ontwikkelings proces.
 
-# Handmatige kontrole met een hulpmiddel
+## Handmatige kontrole met een hulpmiddel
 
 Deze oplossingsrichting is een handmatige bediening met een plugin als hulpmiddel. Een voorbeeld hiervan is de _Plugin Inspector_. Zoek in de WordPress Plugin Directory naar deze plugin en installeer deze als gebruikelijk.
 
-![Plugin Inspector in de PluginWordPress Directory](images/PluginInspectorPluginDirectory.PNG)
+![Plugin Inspector in de Plugin WordPress Directory](images/PluginInspectorPluginDirectory.PNG)
 <br><br>
 Hiermee gaat de bronkode van de Login LockDown plugin worden gevalideerd.
 
@@ -42,7 +57,7 @@ En dit is inderdaad onderdeel van de kode die ervoor zorgt dat gebruikersnamen e
 
 Probeer nu zelf de PHP kode te achterhalen die een POST request uitvoert naar de webserver.
 
-# Integratie in het software ontwikkelingsproces
+## Integratie in het software ontwikkelingsproces
 
 Deze oplossingsrichting kan volledig worden geïntegreerd in het software ontwikkelings proces, bijvoorbeeld door opname in een CI/CD pipeline. Het resultaat kan zijn dat een build wordt afgebroken indien verdachte PHP kode wordt gevonden.
 
