@@ -222,6 +222,10 @@ Als het goed is zie je een pagina zoals onderstaande foto.
 ![Wordpress default](images/localhost_wordpress.PNG)
 
 Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
+
+Als alles werkt dan zie je deze inlogpagina.
+
+![Admin-login](images/wordpress_admin_login.PNG)
 <br>
 <br>
 <br>
