@@ -4,7 +4,7 @@ In deze readme wordt de volgorde aangegeven die deze workshop wordt volgt
 
 Lees en volg de instructies in onderstaande volgorde:
 
-* 1.README.md
+* 1.Installatie.md
 * 2.Hardening.md
 * 3.Plugins Hardening.md
 
