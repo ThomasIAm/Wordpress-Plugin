@@ -213,6 +213,10 @@ Sla het bestand op.
 
 Open nu een browser en ga naar <a href="http://localhost/">http://localhost/</a>.
 
+Als het goed is zie je een pagina zoals onderstaande foto.
+
+![Wordpress default](images/localhost_wordpress.PNG)
+
 Volg hier het installatie proces. 
 
 Daarna kun je inloggen via <a href="http://localhost/wp-login.php">http://localhost/wp-login.php</a>
