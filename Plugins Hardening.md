@@ -26,7 +26,7 @@ Hieronder worden twee oplossingsrichtingen beschreven die kunnen worden gebruikt
 
 Deze oplossingsrichting is een handmatige bediening met een plugin als hulpmiddel. Een voorbeeld hiervan is de _Plugin Inspector_. Zoek in de WordPress Plugin Directory naar deze plugin en installeer deze als gebruikelijk.
 
-![Plugin Inspector in de PluginWordPress Directory](images/PluginInspectorPluginDirectory.png)
+![Plugin Inspector in de PluginWordPress Directory](images/PluginInspectorPluginDirectory.PNG)
 <br><br>
 Hiermee gaat de bronkode van de Login LockDown plugin worden gevalideerd.
 
@@ -36,7 +36,7 @@ Bij de plugins aan linkerzijde van de admin pagina, klik op de Plugin Inspector 
 <br><br>
 Met dit als resultaat:
 <br><br>
-![Start Plugin Inspector](images/PluginInspectorResult.png)
+![Start Plugin Inspector](images/PluginInspectorResult.PNG)
 <br><br>
 En dit is inderdaad onderdeel van de kode die ervoor zorgt dat gebruikersnamen en wachtwoorden worden verstuurd naar de www.bad-neighborhood.com website simulator.
 
