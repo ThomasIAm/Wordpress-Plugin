@@ -17,7 +17,7 @@ In de bovenstaande handleiding wordt ook uitgebreid beschreven waar men op moet 
 * Download en gebruik alleen plugins van betrouwbare bronnen
 * Vervang verouderde plugins door nieuwere alternatieve plugins
 * Selecteer kritisch een plugin voordat talloze andere plugins worden geïnstalleerd
-* Valideer de bronkode op kwetsbaarheden
+* Kontroleer de bronkode op kwetsbaarheden
 
 # Automatische Updates
 
