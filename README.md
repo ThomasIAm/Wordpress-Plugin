@@ -15,19 +15,19 @@ Veel plezier met het lezen en uitvoeren van de stappen!
 
 ## Inhoudsopgave ##
 
-* Installatie Wordpress
-    * installeer dependencies
-    * installeer Wordpress
-    * configureer Apache
-    * configureer database
-    * configureer Wordpress met database
-    * configureer Wordpress
-* Installatie Phpmyadmin
-* Installatie Login LockDown plugin
-* Installatie Website Simulator
-* Installatie Laatste Versie Login LockDown plugin
+- [Installatie Wordpress](#wordpress)
+    - [installeer dependencies](#dependencies)
+    - [installeer Wordpress](#installatie-wordpress)
+    - [configureer Apache](#apache)
+    - [configureer database](#database)
+    - [configureer Wordpress met database](#wpdata)
+    - [configureer Wordpress](#wordpress-configuratie)
+- [Installatie Phpmyadmin](#phpmyadmin)
+- [Installatie Login LockDown plugin](#loginlockdown)
+- [Installatie Website Simulator](#simulator)
+- [Installatie Laatste Versie Login LockDown plugin](#loginlockdown2)
 
-# Installatie Wordpress #
+# Installatie Wordpress <a name="wordpress"></a>
 
 ## installeer dependencies ##
 
@@ -239,7 +239,7 @@ phpMyAdmin is een hulpmiddel om de database van WordPress te beheren. Nadat Word
 
     sudo apt install phpmyadmin
 
-En afhankelijk van de onderliggende webserver technologie de volgende kommando's:
+En afhankelijk van de onderliggende webserver technologie de volgende commando's:
 
 Voor een Apache server:
 
@@ -269,7 +269,7 @@ Om wat extra security toe te voegen wordt de Login LockDown gebruikt welke verke
 * Klik op de Install Now knop
 * Klik op de Activate knop (de plugin staat nu bij de lijst van active plugins)
 * Probeer in te loggen met een juiste gebruikersnaam maar een verkeerd wachtwoord (probeer dit maar één keer!)
-* Kontroleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
+* Controleer in phpMyAdmin of er inderdaad een logging wordt vermeld van het gebruik van een verkeerd wachtwoord (tabel wp_login_fails)
 
 # Installatie www.bad-neighborhood.com Website Simulator
 
@@ -277,12 +277,9 @@ De ontwikkelaar van de Login LockDown plugin heeft een eigen website www.bad-nei
 
 Voer de volgende stappen uit om deze lokaal te installeren.
 
-Maak een subfolder in de Applications subfolder:
+Ga naar de folder Wordpress Plugin/www.bad-neighborhood.com
 
-    ~$ cd ~/Applications
-    ~/Applications$ mkdir www.bad-neighborhood.com
-
-Download de www.bad-neighborhood.com.zip file en pak de zip file uit in de net aangemaakte subfolder. Hierna staan in deze folder in ieder geval twee bestanden:
+Hier staan in ieder geval twee bestanden:
 
     index.html
     server.py
@@ -290,6 +287,12 @@ Download de www.bad-neighborhood.com.zip file en pak de zip file uit in de net a
 Start de simulator met:
 
     ./server.py
+
+Of als je python wil gebruiken:
+
+`python3 server.py`
+
+Dit laatste werkt alleen als je python3 hebt geïnstalleerd.
 
 Indien succesvol gestart verschijnt de logging:
 
@@ -320,10 +323,10 @@ De stappen voor installatie zijn iets anders dan de eerdere installatie van vers
 
 En vervolgens:
 
-1. Kontroleer op de WordPress admin pagina of nu inderdaad versie 1.8.2 actief is.
-2. Probeer nu weer eens in te loggen met een onjuist wachtwoord.
+1. Controleer op de WordPress admin pagina of nu inderdaad versie 1.8.2 actief is.
+2. Probeer nu weer eens in te loggen met een onjuist wachtwoord (Doe dit maximaal **één keer** zodat je account niet voor een uur gelockt wordt(mocht dit wel gebeuren wat zou je kunnen doen om dit direct op te lossen?)).
 3. Log nu weer in met het juiste wachtwoord.
-4. Kontroleer in phpMyAdmin of er inderdaad weer een logging wordt vermeld van het gebruik van een verkeerd wachtwoord.
+4. Controleer in phpMyAdmin of er inderdaad weer een logging wordt vermeld van het gebruik van een verkeerd wachtwoord.
 
 Ga nu terug naar de www.bad-neighborhood.com website simulator in de browser.
 
