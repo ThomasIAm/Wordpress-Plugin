@@ -16,16 +16,16 @@ Veel plezier met het lezen en uitvoeren van de stappen!
 ## Inhoudsopgave ##
 
 1. [Installatie Wordpress](#wordpress)
-    1.1 [installeer dependencies](#dependencies)
-    1.2 [installeer Wordpress](#installatie-wordpress)
-    1.3 [configureer Apache](#apache)
-    1.4 [configureer database](#database)
-    1.5 [configureer Wordpress met database](#wpdata)
-    1.6 [configureer Wordpress](#wordpress-configuratie)
-2 [Installatie Phpmyadmin](#phpmyadmin)
-3 [Installatie Login LockDown plugin](#loginlockdown)
-4 [Installatie Website Simulator](#simulator)
-5 [Installatie Laatste Versie Login LockDown plugin](#loginlockdown2)
+    1.1. [installeer dependencies](#dependencies)
+    1.2. [installeer Wordpress](#installatie-wordpress)
+    1.3. [configureer Apache](#apache)
+    1.4. [configureer database](#database)
+    1.5. [configureer Wordpress met database](#wpdata)
+    1.6. [configureer Wordpress](#wordpress-configuratie)
+2. [Installatie Phpmyadmin](#phpmyadmin)
+3. [Installatie Login LockDown plugin](#loginlockdown)
+4. [Installatie Website Simulator](#simulator)
+5. [Installatie Laatste Versie Login LockDown plugin](#loginlockdown2)
 
 # Installatie Wordpress <a name="wordpress"></a>#
 
